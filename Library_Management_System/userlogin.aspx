@@ -64,6 +64,7 @@
                                 </div>
                          </div>
 
+
                         <%-- button --%>
 
                          <div class="row">
@@ -92,10 +93,13 @@
                         <%-- button --%>
 
 
+
                     </div>
                 </div>
+ 
 
                 <a href="homepage.aspx"> Back To Home </a>
+
 
             </div>
         </div>
