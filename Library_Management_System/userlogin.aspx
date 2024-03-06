@@ -65,10 +65,42 @@
                          </div>
 
 
+                        <%-- button --%>
+
+                         <div class="row">
+                                   <div class="col">
+                                             <div class="form-group">
+                                                 <asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Login" />
+
+
+                  
+                                             </div>
+                                    </div>
+                          </div>
+
+
+                         <div class="row">
+                                  <div class="col">
+                                      <div class="form-group">
+
+                                       <a href="usersignup.aspx"> <input class="btn btn-info btn-block w-100 btn-lg" id="Button2" type="button"  value="Sign Up" />
+                                       </a>
+                  
+                                      </div>
+                                  </div>
+                         </div>
+
+                        <%-- button --%>
+
 
 
                     </div>
                 </div>
+ 
+
+                <a href="homepage.aspx"> Back To Home </a>
+
+
             </div>
         </div>
     </div>
