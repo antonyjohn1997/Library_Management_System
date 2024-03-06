@@ -26,7 +26,7 @@
                            <div class="col">
                                       <center>
 
-                                          <h3>User Login</h3>
+                                          <h3>Admin Login</h3>
 
                                       </center>
                            </div>
