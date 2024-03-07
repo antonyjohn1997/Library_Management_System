@@ -164,25 +164,14 @@
               <div class="card">
                  <div class="card-body">
 
-                      <div class="row">
-                            <div class="col">
-                                 <center>
-
-                                    <img src="img/book.jpg" width="100px"/>
-                                
-
-                                 </center>
-                           </div>
-                     </div>
-
                      
                      <div class="row">
                            <div class="col">
                                       <center>
 
-                                          <h3>Your Issued Books</h3>
+                                          <h3>Author Lists</h3>
                                           
-                                          <asp:Label ID="Label2" runat="server" Text="Your Books Info" CssClass="badge bg-pill bg-success"></asp:Label>
+                                         
                                       </center>
                            </div>
                      </div>
