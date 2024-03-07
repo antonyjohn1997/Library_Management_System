@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-         <div class="container-fluid">
+   <div class="container-fluid">
      <div class="row">
          <div class="col-md-5">
              <div class="card">
@@ -244,18 +244,18 @@
          </div>
          <div class="col-md-7">
 
-                          <div class="card">
+              <div class="card">
                  <div class="card-body">
 
-                     <div class="row">
-                         <div class="col">
-                             <center>
+                      <div class="row">
+                            <div class="col">
+                                 <center>
 
-                                  <img src="img/book.jpg" width="100px"/>
+                                    <img src="img/book.jpg" width="100px"/>
                                 
 
-                            </center>
-                         </div>
+                                 </center>
+                           </div>
                      </div>
 
                      
@@ -289,12 +289,15 @@
 
                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
                                 
-                             </div>
+                          </div>
              
                     </div>
 
 
  <%-- grid view end --%>        
-                     </div>
+                </div>
+             </div>
+         </div>
+    </div>
 
 </asp:Content>
