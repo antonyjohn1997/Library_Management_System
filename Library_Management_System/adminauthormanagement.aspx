@@ -46,133 +46,30 @@
 
 
                     <div class="row">
-                           <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Full Name</label>
-                                    <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Member ID"></asp:TextBox>
-                                </div>
-                             </div>
+                           <div class="col-md-4">
+                               
+                                    <label>Author ID</label>
+                            <div class="form-group">
+                               <div class="input-group">
+                                     <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Author ID"></asp:TextBox>
+                                     <asp:Button class="btn btn-success" ID="Button2" runat="server" Text="Go" />
+                                  </div>
+                               </div>    
+                           </div>
                         
 
 
                       
-                             <div class="col-md-6">
+                             <div class="col-md-8">
                                   <div class="form-group">
-                                         <label>Date of Birth</label>
-                                                  <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Password" TextMode="Date"></asp:TextBox>
+                                         <label>Author Name</label>
+                                                  <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Author Name"></asp:TextBox>
                                   </div>
                              </div>
                       </div>
 
 
-                       <div class="row">
-                                   <div class="col-md-6">
-                                             <div class="form-group">
-                                                      <label>Contact Number</label>
-                                                           <asp:TextBox ID="TextBox3" runat="server" class="form-control" placeholder="Member ID" TextMode="Number"></asp:TextBox>
-                                             </div>
-                                   </div>
-      
-
-
-    
-                                   <div class="col-md-6">
-                                           <div class="form-group">
-                                                 <label>Email</label>
-                                                   <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Password" TextMode="Email"></asp:TextBox>
-                                           </div>
-                                  </div>
-                     </div>
-
-
-
-                       <div class="row">
-                                   <div class="col-md-4">
-                                             
-                                                     <label>State</label>
-                                                 <div class="form-group">        
-                                                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
-
-                                                                <asp:ListItem Text="Select" Value="Select" />
-                                                                 <asp:ListItem Text="Karnataka" Value="Karnataka" />
-                                                                 <asp:ListItem Text="Tamilnadu" Value="Tamilnadu" />
-                                                                 <asp:ListItem Text="Assam" Value="Assam" />
-
-                                                            </asp:DropDownList>
-                                               </div>
-                                     </div>
-                           
-      
-
-
-    
-                                     <div class="col-md-4">
-                                            <div class="form-group">
-                                                    <label>City</label>
-                                                          <asp:TextBox ID="TextBox6" runat="server" class="form-control" placeholder="City"></asp:TextBox>
-                                            </div>
-                                      </div>
-
-                                      <div class="col-md-4">
-                                             <div class="form-group">
-                                                  <label>Pincode</label>
-                                                      <asp:TextBox ID="TextBox7" runat="server" class="form-control" placeholder="Pincode" TextMode="Number"></asp:TextBox>
-                                             </div>
-                                      </div>
-                        </div>
-
-                     <div class="row">
-                         <div class="col">
-                             <label>Full Address</label>
-                             <div class="form-group">
-
-                                 <asp:TextBox ID="TextBox5" runat="server" TextMode="MultiLine" Rows="2" CssClass="form-control"></asp:TextBox>
-
-                             </div>
-                         </div>
-                     </div>
-
-                     <%-- pills start--%>
-
-                     <div class="row">
-                         <center>
-                         <div class="col">
-
-                             <%--<span class="badge badge-pill badge-info">Login Credentials</span>--%>
-                             <span class="badge bg-pill bg-info">Login Credentials</span>
-                         </div>
-                         </center>
-                     </div>
-
-                       <div class="row">
-                             <div class="col-md-4">
-                                       <div class="form-group">
-                                              <label>User ID</label>
-                                                    <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="User ID" ReadOnly="True"></asp:TextBox>
-                                       </div>
-                             </div>
-                         
-      
-
-
-    
-                      <div class="col-md-4">
-                                <div class="form-group">
-                                      <label>Old Password</label>
-                                            <asp:TextBox ID="TextBox9" runat="server" class="form-control" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
-                                </div>
-                      </div>
-
-
-                       <div class="col-md-4">
-                             <div class="form-group">
-                                    <label>New Password</label>
-                                          <asp:TextBox ID="TextBox10" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
-                             </div>
-                      </div>
-</div>
-
-                     <%-- pills End--%>
+                      
 
 
 
@@ -200,18 +97,34 @@
 
                       <div class="row">
                                        
-                                            <div class="col-8 mx-auto">
-                                                <center>
+                                            <div class="col-4">
+                                                
                                                     <div class="form-group">
                                                         <%--<asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Update" />--%>
                                                          <asp:Button class="btn btn-success btn-block  btn-lg" ID="Button1" runat="server" Text="Update" />
 
-
-
-               
                                                     </div>
                                             </div>
-                                                 </center>
+
+                                         <div class="col-4">
+    
+                                                    <div class="form-group">
+                                                       <%--<asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Update" />--%>
+                                                       <asp:Button class="btn btn-primary btn-block  btn-lg" ID="Button3" runat="server" Text="Update" />
+
+                                                    </div>
+                                        </div>
+
+
+                                        <div class="col-4">
+    
+                                                   <div class="form-group">
+                                                      <%--<asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Update" />--%>
+                                                      <asp:Button class="btn btn-danger btn-block  btn-lg" ID="Button4" runat="server" Text="Update" />
+
+                                                  </div>
+                                       </div>
+                                                 
                    </div>
 
                      <%-- we can use this code too end--%>
