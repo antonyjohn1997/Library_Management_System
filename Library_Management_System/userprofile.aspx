@@ -3,9 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-         <div class="container">
+         <div class="container-fluid">
      <div class="row">
-         <div class="col-md-8 mx-auto">
+         <div class="col-md-5">
              <div class="card">
                  <div class="card-body">
 
@@ -25,8 +25,9 @@
                            <div class="col">
                                       <center>
 
-                                          <h3>User SignUP</h3>
-
+                                          <h3>Your Profile</h3>
+                                          <span>Account Status </span>
+                                          <asp:Label ID="Label1" runat="server" Text="Your Status" CssClass="badge bg-pill bg-success"></asp:Label>
                                       </center>
                            </div>
                      </div>
@@ -132,7 +133,7 @@
                          </div>
                      </div>
 
-                     <%-- pills --%>
+                     <%-- pills start--%>
 
                      <div class="row">
                          <center>
@@ -145,10 +146,10 @@
                      </div>
 
                        <div class="row">
-                             <div class="col-md-6">
+                             <div class="col-md-4">
                                        <div class="form-group">
                                               <label>User ID</label>
-                                                    <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="User ID" ></asp:TextBox>
+                                                    <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="User ID" ReadOnly="True"></asp:TextBox>
                                        </div>
                              </div>
                          
@@ -156,33 +157,67 @@
 
 
     
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                                 <div class="form-group">
-                                      <label>Password</label>
-                                            <asp:TextBox ID="TextBox9" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                      <label>Old Password</label>
+                                            <asp:TextBox ID="TextBox9" runat="server" class="form-control" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                                 </div>
+                      </div>
+
+
+                       <div class="col-md-4">
+                             <div class="form-group">
+                                    <label>New Password</label>
+                                          <asp:TextBox ID="TextBox10" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                             </div>
                       </div>
 </div>
 
-                     <%-- pills --%>
+                     <%-- pills End--%>
 
 
 
                      <%-- button --%>
 
+                     <%-- 
+
                       <div class="row">
+                          <center>
                                 <div class="col">
                                           <div class="form-group">
-                                              <asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Login" />
+                                              <%--<asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Update" />--%>
+                                              <%--<asp:Button class="btn btn-success btn-block  btn-lg" ID="Button2" runat="server" Text="Update" />
+
 
 
                
                                           </div>
                                  </div>
-                       </div>
+                          </center>
+                       </div>--%>
 
 
+                     <%-- we can use this code too start--%>
                       <div class="row">
+                                       
+                                            <div class="col-8 mx-auto">
+                                                <center>
+                                                    <div class="form-group">
+                                                        <%--<asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Update" />--%>
+                                                         <asp:Button class="btn btn-success btn-block  btn-lg" ID="Button1" runat="server" Text="Update" />
+
+
+
+               
+                                                    </div>
+                                            </div>
+                                                 </center>
+                   </div>
+
+                     <%-- we can use this code too end--%>
+
+
+                      <%--<div class="row">
                                <div class="col">
                                    <div class="form-group">
 
@@ -192,6 +227,8 @@
                                    </div>
                                </div>
                       </div>
+
+                          --%>
 
                      <%-- button --%>
 
@@ -205,7 +242,59 @@
 
 
          </div>
-     </div>
- </div>
+         <div class="col-md-7">
+
+                          <div class="card">
+                 <div class="card-body">
+
+                     <div class="row">
+                         <div class="col">
+                             <center>
+
+                                  <img src="img/book.jpg" width="100px"/>
+                                
+
+                            </center>
+                         </div>
+                     </div>
+
+                     
+                     <div class="row">
+                           <div class="col">
+                                      <center>
+
+                                          <h3>Your Issued Books</h3>
+                                          
+                                          <asp:Label ID="Label2" runat="server" Text="Your Books Info" CssClass="badge bg-pill bg-success"></asp:Label>
+                                      </center>
+                           </div>
+                     </div>
+                     
+
+
+                     <div class="row">
+                          <div class="col">
+                                  <center>
+
+                                      <hr />
+
+
+                                  </center>
+                          </div>
+                     </div>
+
+<%-- grid view start --%>
+                    <div class="row">
+                           <div class="col">
+
+                               <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                
+                             </div>
+             
+                    </div>
+
+
+ <%-- grid view end --%>        
+                     </div>
 
 </asp:Content>
