@@ -5,7 +5,7 @@
 
    <div class="container-fluid">
      <div class="row">
-         <div class="col-md-5">
+         <div class="col-md-6">
              <div class="card">
                  <div class="card-body">
 
@@ -53,27 +53,29 @@
                                     <div class="form-group">
                                          <div class="input-group">
                                                 <asp:TextBox ID="TextBox3" runat="server" class="form-control" placeholder="Member ID"></asp:TextBox>
-                                                <asp:Button class="btn btn-success" ID="Button5" runat="server" Text="Go" />
+                                                <%--<asp:Button class="btn btn-success" ID="Button5" runat="server" Text="Go" />--%>
+                                                <asp:LinkButton class="btn btn-success" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
                                          </div>
                                     </div>
                             </div>
 
-                           <div class="col-md-4">
+                           <div class="col-md-3">
                                  <div class="form-group">
                                       <label>Full Name</label>
                                             <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Full Name"></asp:TextBox>
                                  </div>
                            </div>
 
-                          <div class="col-md-5">
+                          <div class="col-md-6">
                                <label>Account Status</label>
 
                               <div class="form-group">
                                     <div class="input-group">
-                                          <asp:TextBox ID="TextBox9" runat="server" class="form-control" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
-                                          <asp:Button class="btn btn-success" ID="Button3" runat="server" Text="S" />
-                                          <asp:Button class="btn btn-warning" ID="Button4" runat="server" Text="P" />
-                                          <asp:Button class="btn btn-danger" ID="Button6" runat="server" Text="D" />
+                                          <asp:TextBox ID="TextBox9" runat="server" class="form-control mr-1" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
+                                          <asp:LinkButton class="btn btn-success mr-1" ID="LinkButton1" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                                          <asp:LinkButton class="btn btn-warning mr-1" ID="LinkButton2" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
+                                          <asp:LinkButton class="btn btn-danger mr-1" ID="LinkButton3" runat="server"><i class="fas fa-times-circle"></i></asp:LinkButton>
+ 
                                     </div>
                              </div>
 
