@@ -85,6 +85,23 @@
 
 
    <div class="row">
+         <div class="col-md-3">
+              <div class="form-group">
+                     <label>DOB</label>
+                              <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="DOB" ReadOnly="True"></asp:TextBox>
+              </div>
+         </div>
+        <div class="col-md-4">
+             <div class="form-group">
+                <label>Contact Number</label>
+                      <asp:TextBox ID="TextBox10" runat="server" class="form-control" placeholder="Contact Number" ReadOnly="True"></asp:TextBox>
+             </div>
+       </div>
+
+        <div class="col-md-5">
+              <div class="form-group">
+                  <label>Email ID</label>
+                     <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Email ID" ReadOnly="True"></asp:TextBox>
 
          <div class="col-md-6">
               <div class="form-group">
@@ -97,12 +114,49 @@
               <div class="form-group">
                   <label>Book Name</label>
                      <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Book Name"></asp:TextBox>
+
               </div>
        </div>
   </div>
           
                         
 
+
+
+     <div class="row">
+
+       <div class="col-md-4">
+            <div class="form-group">
+                   <label>State</label>
+                            <asp:TextBox ID="TextBox5" runat="server" class="form-control" placeholder="State" ReadOnly="True"></asp:TextBox>
+            </div>
+       </div>
+      <div class="col-md-4">
+           <div class="form-group">
+              <label>City</label>
+                    <asp:TextBox ID="TextBox6" runat="server" class="form-control" placeholder="City" ReadOnly="True"></asp:TextBox>
+           </div>
+     </div>
+
+      <div class="col-md-4">
+            <div class="form-group">
+                <label>Pincode</label>
+                   <asp:TextBox ID="TextBox11" runat="server" class="form-control" placeholder="Pincode" ReadOnly="True"></asp:TextBox>
+            </div>
+     </div>
+</div>
+          
+
+
+
+   <div class="row">
+       <div class="col-12">
+            <div class="form-group">
+                <label>Full Postal Address</label>
+                   <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="Full Postal Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
+            </div>
+     </div>
+  </div>
 
  <div class="row">
 
@@ -141,6 +195,7 @@
 
 
 
+
                      <%-- button --%>
 
                      <%-- 
@@ -165,14 +220,25 @@
 
                       <div class="row">
                                        
+
+                                            <div class="col-8 mx-auto">
+                                                
+                                                    <div class="form-group">
+                                                        <asp:Button class="btn btn-danger btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Delete User Permanantly" />
+
                                             <div class="col-6">
                                                 
                                                     <div class="form-group">
                                                         <asp:Button class="btn btn-primary btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Issue" />
+
                                                          <%--<asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Issue" />--%>
 
                                                     </div>
                                             </div>
+
+                    
+                     </div>
+
 
                                         
 
@@ -186,6 +252,7 @@
                                        </div>
                                                  
                    </div>
+
 
                      <%-- we can use this code too end--%>
 
@@ -214,10 +281,65 @@
              <a href="homepage.aspx"> Back To Home </a>
      </div>
 
+  
+ 
+     <div class="col-md-6">
+
+              <div class="card">
+                 <div class="card-body">
+
+                     
+                     <div class="row">
+                           <div class="col">
+                                      <center>
+
+                                          <h3>Member Lists</h3>
+                                          
+                                         
+                                      </center>
+                           </div>
+                     </div>
+                     
+
+
+                     <div class="row">
+                          <div class="col">
+                                  <center>
+
+                                      <hr />
+
+
+                                  </center>
+                          </div>
+                     </div>
+
+<%-- grid view start --%>
+                    <div class="row">
+                           <div class="col">
+
+                               <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                
+                          </div>
+             
+                    </div>
+
+
+ <%-- grid view end --%>        
+                </div>
+             </div>
+         </div>
+    </div>
+
+        
+    
+
+
+
  
 
 
           
     </div>
+
 
 </asp:Content>
