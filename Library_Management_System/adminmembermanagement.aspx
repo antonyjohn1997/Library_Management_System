@@ -85,7 +85,6 @@
 
 
    <div class="row">
-
          <div class="col-md-3">
               <div class="form-group">
                      <label>DOB</label>
@@ -103,11 +102,25 @@
               <div class="form-group">
                   <label>Email ID</label>
                      <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Email ID" ReadOnly="True"></asp:TextBox>
+
+         <div class="col-md-6">
+              <div class="form-group">
+                     <label>Member Name</label>
+                              <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Member Name"></asp:TextBox>
+              </div>
+         </div>
+
+        <div class="col-md-6">
+              <div class="form-group">
+                  <label>Book Name</label>
+                     <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Book Name"></asp:TextBox>
+
               </div>
        </div>
   </div>
           
                         
+
 
 
      <div class="row">
@@ -145,6 +158,41 @@
      </div>
   </div>
 
+ <div class="row">
+
+       <div class="col-md-6">
+            <div class="form-group">
+                   <label>Member Name</label>
+                            <asp:TextBox ID="TextBox5" runat="server" class="form-control" placeholder="Member Name" ReadOnly="True"></asp:TextBox>
+            </div>
+       </div>
+
+      <div class="col-md-6">
+            <div class="form-group">
+                <label>Book Name</label>
+                   <asp:TextBox ID="TextBox6" runat="server" class="form-control" placeholder="Book Name" ReadOnly="True"></asp:TextBox>
+            </div>
+     </div>
+</div>
+
+   <div class="row">
+
+       <div class="col-md-6">
+            <div class="form-group">
+                   <label>Start Date</label>
+                            <asp:TextBox ID="TextBox7" runat="server" class="form-control" placeholder="Start Date" TextMode="DateTime"></asp:TextBox>
+            </div>
+       </div>
+
+      <div class="col-md-6">
+            <div class="form-group">
+                <label>End Date</label>
+                   <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="End Date" TextMode="DateTime"></asp:TextBox>
+            </div>
+     </div>
+</div>
+
+
 
 
 
@@ -172,16 +220,39 @@
 
                       <div class="row">
                                        
+
                                             <div class="col-8 mx-auto">
                                                 
                                                     <div class="form-group">
                                                         <asp:Button class="btn btn-danger btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Delete User Permanantly" />
+
+                                            <div class="col-6">
+                                                
+                                                    <div class="form-group">
+                                                        <asp:Button class="btn btn-primary btn-block w-100 btn-lg" ID="Button1" runat="server" Text="Issue" />
+
                                                          <%--<asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Issue" />--%>
 
                                                     </div>
                                             </div>
+
                     
                      </div>
+
+
+                                        
+
+                                        <div class="col-6">
+    
+                                                   <div class="form-group">
+                                                      <asp:Button class="btn btn-success btn-block w-100 btn-lg" ID="Button2" runat="server" Text="Return" />
+                                                      <%--<asp:Button class="btn btn-success btn-block btn-lg" ID="Button4" runat="server" Text="Return" />--%>
+
+                                                  </div>
+                                       </div>
+                                                 
+                   </div>
+
 
                      <%-- we can use this code too end--%>
 
@@ -209,6 +280,7 @@
         </div>
              <a href="homepage.aspx"> Back To Home </a>
      </div>
+
   
  
      <div class="col-md-6">
@@ -260,5 +332,14 @@
 
   </div>     
     
+
+
+
+ 
+
+
+          
+    </div>
+
 
 </asp:Content>
