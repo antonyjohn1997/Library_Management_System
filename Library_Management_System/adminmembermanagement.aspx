@@ -103,10 +103,10 @@
                   <label>Email ID</label>
                      <asp:TextBox ID="TextBox41" runat="server" class="form-control" placeholder="Email ID" ReadOnly="True"></asp:TextBox>
 
-       
-  </div>
+              </div>
+       </div>
           
-                        
+ </div>                
 
 
 
@@ -145,39 +145,9 @@
      </div>
   </div>
 
- <div class="row">
+ 
 
-       <div class="col-md-6">
-            <div class="form-group">
-                   <label>Member Name</label>
-                            <asp:TextBox ID="TextBox55" runat="server" class="form-control" placeholder="Member Name" ReadOnly="True"></asp:TextBox>
-            </div>
-       </div>
-
-      <div class="col-md-6">
-            <div class="form-group">
-                <label>Book Name</label>
-                   <asp:TextBox ID="TextBox66" runat="server" class="form-control" placeholder="Book Name" ReadOnly="True"></asp:TextBox>
-            </div>
-     </div>
-</div>
-
-   <div class="row">
-
-       <div class="col-md-6">
-            <div class="form-group">
-                   <label>Start Date</label>
-                            <asp:TextBox ID="TextBox7" runat="server" class="form-control" placeholder="Start Date" TextMode="DateTime"></asp:TextBox>
-            </div>
-       </div>
-
-      <div class="col-md-6">
-            <div class="form-group">
-                <label>End Date</label>
-                   <asp:TextBox ID="TextBox88" runat="server" class="form-control" placeholder="End Date" TextMode="DateTime"></asp:TextBox>
-            </div>
-     </div>
-</div>
+  
 
 
 
