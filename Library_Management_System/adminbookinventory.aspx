@@ -5,7 +5,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
 
@@ -74,7 +74,7 @@
 
                                  </asp:DropDownList>
 
-                               </div>
+                              </div>
                                <label>Publisher Name</label>
                                    <div class="form-group">
                                        <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control">
@@ -83,7 +83,7 @@
                                            
                                       </asp:DropDownList>
 
-                                  </div>
+                                   </div>
 
 
 
@@ -144,16 +144,103 @@
                                     <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control" placeholder="Pages" TextMode="Number"></asp:TextBox>
                                  </div>
                           </div>
-
-
-
-                       </div>
+                   </div>
 
                
+                  <div class="row">
+                      <div class="col-md-4">
+                          <label>Actual Stock</label>
+                             <div class="form-control">
+                                 <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control" placeholder="Actual Stock" TextMode="Number"></asp:TextBox>
 
-                   </div>
+                             </div>
+                      </div>
+
+                      <div class="col-md-4">
+                         <label>Current Stock</label>
+                            <div class="form-control">
+                                <asp:TextBox ID="TextBox8" runat="server" CssClass="form-control" placeholder="Current Stock" TextMode="Number" ReadOnly="True"></asp:TextBox>
+
+                            </div>
+                     </div>
+
+                        <div class="col-md-4">
+                            <label>Issued Books</label>
+                               <div class="form-control">
+                                   <asp:TextBox ID="TextBox9" runat="server" CssClass="form-control" placeholder="Issued Books" TextMode="Number" ReadOnly="True"></asp:TextBox>
+
+                               </div>
+                      </div>
+                </div>
+
+
+             <div class="row">
+                 <label>Book Description</label>
+                     <div class="form-group">
+                             <asp:TextBox ID="TextBox10" runat="server" CssClass="form-control" placeholder="Book Description" TextMode="MultiLine" ReadOnly="True" Rows="2"></asp:TextBox>
+
+                     </div>
+             </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <asp:Button CssClass="btn btn-lg w-100 btn-block btn-success" ID="Button1" runat="server" Text="Add" />
+                </div>
+
+                <div class="col-4">
+                    <asp:Button CssClass="btn btn-lg w-100 btn-block btn-warning" ID="Button2" runat="server" Text="Update" />
+               </div>
+
+                <div class="col-4">
+                    <asp:Button CssClass="btn btn-lg w-100 btn-block btn-danger" ID="Button3" runat="server" Text="Delete" />
                 </div>
             </div>
+
+
+
+       </div>
+    </div>
+
+ </div>
+         
+                 <a href="homepage.aspx"> Back To Home </a>
+</div>
+         <%-- seconcd column start --%>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <center>
+                                   <h4>Book Inventory Lists </h4>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <asp:GridView ID="GridView1" runat="server" class="table table-striped table-bordered"></asp:GridView>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+         <%-- seconcd column end --%>
+
+
+
+
+
         </div>
     </div>
 
